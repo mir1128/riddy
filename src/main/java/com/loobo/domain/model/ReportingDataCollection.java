@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalTime;
+import java.util.Date;
 
 @Entity
 @Table(name = "reporting_data_collection_1")
@@ -48,7 +49,7 @@ public class ReportingDataCollection {
     private String field10;
 
     @Column(name = "reporting_time")
-    private LocalTime reportingTime;
+    private Date reportingTime;
 
     @Column(name = "reporting_from")
     private String reportingFrom;
@@ -141,11 +142,11 @@ public class ReportingDataCollection {
         this.field10 = field10;
     }
 
-    public LocalTime getReportingTime() {
+    public Date getReportingTime() {
         return reportingTime;
     }
 
-    public void setReportingTime(LocalTime reportingTime) {
+    public void setReportingTime(Date reportingTime) {
         this.reportingTime = reportingTime;
     }
 
